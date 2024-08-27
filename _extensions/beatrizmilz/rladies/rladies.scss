@@ -16,7 +16,7 @@ $h3-font-size: 1.15em !default;
 $code-color: #88398A !default;
 $font-family-monospace: 'Inconsolata', monospace  !default;
 
-// general  
+// general
 $body-bg: #fff;
 $body-color: #000000;
 $link-color: #88398a;
@@ -85,4 +85,7 @@ section.has-dark-background a, section.has-dark-background a:hover {
   right: 10px !important;
   top: unset !important;
   color: $body-color !important;
+}
+.icon-cog {
+  color: #562457;
 }

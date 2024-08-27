@@ -1,7 +1,7 @@
 ---
 title: "R-Ladies Floripa"
 subtitle: "Apresentação do Capítulo"
-author: "[Tamires Martins](https://www.linkedin.com/in/tamimart/)"
+author: "[Tami Martins](https://www.linkedin.com/in/tamimart/)"
 format: 
   rladies-revealjs:
     footer: "[R-Ladies](https://rladies.org/) theme for [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/index.html). Code available on [GitHub](https://github.com/beatrizmilz/quarto-rladies-theme)."
@@ -11,11 +11,17 @@ embed-resources: true
 
 ## Missão
 
-
+![](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1d393e34849077.56e0158a146e8.gif){fig-align="center"}
 
 ## *Survey* UseR! 2022
 
-[![Survey](/img/survey.png)](https://forwards.github.io/docs/useR2022_survey/){fig-align="center" width=4, height=2}
+[![](/img/survey2022.png)](https://forwards.github.io/docs/useR2022_survey/){width=50%}
+
+Para saber mais, acesse [os relatórios](https://forwards.github.io/docs/).
+
+## *Survey* UseR! 2016
+
+[![](/img/survey2016.PNG)](https://forwards.github.io/docs/nonresponse_useR2016_survey/)
 
 Para saber mais, acesse [os relatórios](https://forwards.github.io/docs/).
 
@@ -29,7 +35,31 @@ Por [R-Ladies Global](https://rladies.org/):
 
 ## Onde surgiu?
 
-SF-GQ
+Criado pela [Gabriela de Queiroz](https://www.linkedin.com/in/gabrieladequeiroz/) em **2012**, o R-Ladies começou como um grupo de estudos em São Francisco. Depois, mais três capítulos foram ativados.
+
+Em 2016, o grupo se expandiu para outras cidades e países, tornando-se uma comunidade global.
+
+[![Hoje, Agosto de 2024.](/img/rladies_numbers.png)](https://benubah.github.io/r-community-explorer/rladies.html)
+
+## Rebranding
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](/img/rebranding.jpeg){fig-align="center" width=60%}   
+:::
+
+::: {.column width="50%"}
+~~R-Ladies~~ está passando por um rebranding. Buscando um nome que represente melhor a diversidade de gêneros minoritários. Isso está sendo feito de forma coletiva e global. Ainda não temos um prazo para o término desse processo.
+:::
+
+::::
+
+## Só minorias de gênero podem participar?
+
+Não! O R-Ladies é um grupo inclusivo, que busca promover a diversidade e inclusão em todos os sentidos. Então, aliados que não se identificam como minoria de gênero também são bem-vindos!
+
+Visamos manter um ambiente seguro e acolhedor para todas as pessoas. Por isso a importância que todos estejam de acordo com o [código de conduta](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese).
 
 ## Capítulos
 
@@ -45,120 +75,115 @@ SF-GQ
 :::
 
 ## Eventos passados 
-::: {layout-nrow=2}
-foto1
-. . .
-foto2
-. . .
-foto3
+
+::: {layout-ncol=3}
+
+![](/img/organizadoras1.PNG)
+
+![](/img/organizadoras2.PNG)
+
+![](/img/organizadoras3.PNG)
 
 :::
-# Organizção hoje 
 
+![](/img/antigo1.PNG){fig-align="center"}
 
-  - Tamires Martins
-  
-  > blablabla
-  
-  - Ana Clara Hofmann
-  
-  > blablabla
+## Eventos passados 
 
+::: {layout-ncol=3}
 
-## Incremental content {background-color="#562457"}
+![](/img/organizadoras1.PNG)
 
-Goals:
+![](/img/organizadoras2.PNG)
 
-    # Compartilhar conhecimentos
-    # Catalisar aprendizados
-    # Suporte 
+![](/img/organizadoras3.PNG)
 
-## You can add R code
-
-```{r}
-#| echo: true
-library(dplyr)
-library(ggplot2)
-g <- starwars |> 
-  ggplot() +
-  geom_point(aes(x = height, y = mass)) +
-  theme_light()
-```
-
-## And show the results aswell :)
-
-```{r}
-#| fig.align: center
-#| echo: true
-g 
-```
-
-## What about tables? {.smaller}
-
-### `knitr::kable()`
-
-::: columns
-::: {.column width="50%"}
-```{r}
-#| label: kable-ex
-#| echo: true
-#| eval: false
-tab <- starwars |>
-  tidyr::drop_na(species) |> 
-  group_by(species) |>
-  summarise(
-    n = n(),
-    mean_heigth = round(mean(height, na.rm = TRUE)),
-    mean_mass = round(mean(mass, na.rm = TRUE))
-  ) |> 
-  slice_max(order_by = n, n = 4) 
-
-knitr::kable(tab)
-```
 :::
 
-::: {.column width="50%"}
-```{r}
-#| label: kable-ex
-#| eval: true
-```
+![](/img/antigo2.PNG){fig-align="center"}
+
+## Eventos passados 
+
+::: {layout-ncol=3}
+
+![](/img/organizadoras1.PNG)
+
+![](/img/organizadoras2.PNG)
+
+![](/img/organizadoras3.PNG)
+
 :::
+
+![](/img/antigo3.PNG){fig-align="center"}
+
+
+## Minha motivação (para aprender R e com a RLadies)
+
+:::: {.columns}
+
+::: {.column width="20%"}
+![](/img/meumeetup.PNG){width=80%}
 :::
 
-## `DT::datatable()` {.smaller}
+::: {.column width="80%"}
+Consegui analisar os dados da minha dissertação de mestrado graças aos conhecimentos compartilados nos encontros da R-Ladies, organizados por outros capítulos espalhados pelo mundo.
+:::
 
-With the `smaller` class in the slide!
-Ex: `## slide name {.smaller}`
+::::
 
-```{r}
-DT::datatable(tab, options = list(pageLength = 5))
-```
+![](/img/dissertacao.PNG){.lightbox fig-align="center" width=80%}
 
-## `gt::gt()`
+:::: {.columns}
 
-```{r}
-gt::gt(tab)
-```
+::: {.column width="65%"}
+[Fernanda Kelly](https://www.linkedin.com/in/fernandakellyrs/) do Capítulo [R-Ladies GYN](https://www.rladiesgyn.com/)
+:::
 
-## `reactable::reactable()`
+::: {.column width="35%"}
+![](/img/fer_rladiesgyn.png){fig-align="left" width=50%}
+:::
 
-```{r}
-reactable::reactable(tab)
-```
+::::
 
-## Diagrams with Mermaid!
+## Organização da R-Ladies Floripa hoje 
 
-Read about how to create a diagram in this [post by Mine Çetinkaya-Rundel](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/21-diagrams/).
+::: {layout-ncol=2 style="font-size:24px"}
+![](/img/org1.PNG){width=40%}\
+**Tamires (Tami) Martins**\
+Farmacêutica e doutoranda em Farmacologia (UFSC), com foco na pesquisa de antidepressivos e na síntese de evidências da literatura pré-clínica ([CAMARADES BR](https://camaradesbrasil.bio.br/)). Professora popular e entusiasta de R, código e ciência aberta.
 
-<center>
-<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/quartotip?src=hash&amp;ref_src=twsrc%5Etfw">#quartotip</a> 21: Create diagrams in Quarto documents using Mermaid or Graphviz in executable code cells, similar to how you create figures.<br><br>Read more: <a href="https://t.co/3qx9oSNCay">https://t.co/3qx9oSNCay</a> <a href="https://t.co/fYzGcISl4h">pic.twitter.com/fYzGcISl4h</a></p>&mdash; Quarto (@quarto_pub) <a href="https://twitter.com/quarto_pub/status/1549271325943947270?ref_src=twsrc%5Etfw">July 19, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</center>
+![](/img/org2.PNG){width=40%}\
+**Ana Clara Hofmann**\
+Estudante de farmácia (UFSC), iniciação científica no LabNeC/[CAMARADES BR](https://camaradesbrasil.bio.br/), presidente da LIATox e organizadora permanente da JAF.
+:::
+> Para se juntar a nós, preencha [esse formulário](https://docs.google.com/forms/d/e/1FAIpQLScDl-Zi8TZpIamzBNEtOsXBpyU_2LhOS00-_tlwHGA9fuN1hg/viewform).
+
+## Próximo Evento
+
+Título (provisório): Lógica de Programação com R.\
+*Speaker*: [Andressa Monteiro](https://www.linkedin.com/in/monteiroandl/)\
+Data: 27/10/2024\
+Local: Online\
+\
+**O plano é**: 1 encontro a cada 2 meses.\
+\
+
+>Fiquem atentos às nossas redes sociais para mais informações!
+
+## Contato 
+:::{.r-stack}
+{{< fa brands meetup >}} [Meetup](https://www.meetup.com/pt-BR/rladies-florianopolis)
+{{< fa brands instagram >}} [Instagram](https://www.instagram.com/rladies.floripa/)
+{{< fa brands github >}} [GitHub](https://github.com/rladiesfloripa)
+{{< fa envelope >}} [E-mail](mailto:rladiesfloripa@gmail.com)
+:::
+
+![](https://simonschoe.github.io/introduction-to-the-tidyverse/img/tidyverse-hex.PNG){fig-align="center" heigth=25% width=25%}
+
+>Participem dos *Surveys* e mandem sugestões de temas na DM do instagram. Para propor uma oficina ou indicar alguém como *Speaker*, preencha [esse formulário](https://docs.google.com/forms/d/e/1FAIpQLSdVXRNZGm4x7f71cPueBQrCDy8mwmtpoiDsgJvOVjgjiqh7pg/viewform?usp=sf_link).
 
 
-## Exporting into PDF
+# Bora começar?
 
-You can use the function `pagedown::chrome_print()` to print the HTML version into a PDF!
+![](https://secure.meetupstatic.com/photos/event/5/e/1/e/600_522504094.webp?w=384){width="90%"}
 
-```r
-pagedown::chrome_print("path-to-file.html")
-```
