@@ -1,0 +1,4 @@
+- source: apresentacao_capitulo.qmd
+  quarto-pub:
+    - id: 5e6a4507-0203-45a2-83ca-f5dc68c4efdb
+      url: 'https://rladiesfloripa.quarto.pub/r-ladies-floripa'
