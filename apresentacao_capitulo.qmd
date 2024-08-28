@@ -59,7 +59,7 @@ Em 2016, o grupo se expandiu para outras cidades e países, tornando-se uma comu
 
 Não! O R-Ladies é um grupo inclusivo, que busca promover a diversidade e inclusão em todos os sentidos. Então, aliados que não se identificam como minoria de gênero também são bem-vindos!
 
-Visamos manter um ambiente seguro e acolhedor para todas as pessoas. Por isso a importância que todos estejam de acordo com o [código de conduta](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese).
+Visamos manter um ambiente seguro e acolhedor para todas as pessoas. Por isso, a importância que todos estejam de acordo com o [código de conduta](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct#portuguese).
 
 ## Capítulos
 
@@ -126,7 +126,7 @@ Visamos manter um ambiente seguro e acolhedor para todas as pessoas. Por isso a 
 :::
 
 ::: {.column width="80%"}
-Consegui analisar os dados da minha dissertação de mestrado graças aos conhecimentos compartilados nos encontros da R-Ladies, organizados por outros capítulos espalhados pelo mundo.
+Consegui analisar os dados da minha dissertação de mestrado graças aos conhecimentos compartilhados nos encontros da R-Ladies, organizados por outros capítulos espalhados pelo mundo.
 :::
 
 ::::
